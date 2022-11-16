@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #c8e9fa;
+}
+main{
+    .divPrincipal{
+        p{
+            font-family: "Quicksand";
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        padding: 1rem 1rem 0 1rem;
+        .divResiduos{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-row-gap: 2rem;
+            grid-column-gap: 3rem;
+            align-items: center;
+            justify-items: center;
+            img{
+                width: 100px;
+            }
+        }
+        .felicitaciones{
+            display: flex;
+        }
+        .dragging{
+            opacity: 0.3;
+        }
+        .divContenedores{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 6rem;
+            grid-row-gap: 1rem;
+            div{
+                display: grid;
+                justify-items: center;
+                img{
+                    width: 115px;
+                }
+            }
+        }
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0 3rem 0;
+        button{
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+
+    p{
+        font-family: "Quicksand";
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    i{
+        color: #222325;
+        padding-left: 0.5rem;
+    }
+}

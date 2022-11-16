@@ -1,0 +1,86 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #c8e9fa; }
+
+main .divPrincipal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 1rem 1rem 0 1rem; }
+  main .divPrincipal p {
+    font-family: "Quicksand";
+    text-align: center;
+    font-size: 1.1rem; }
+  main .divPrincipal .divResiduos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 2rem;
+    grid-column-gap: 3rem;
+    align-items: center;
+    justify-items: center; }
+    main .divPrincipal .divResiduos img {
+      width: 100px; }
+  main .divPrincipal .felicitaciones {
+    display: flex; }
+  main .divPrincipal .dragging {
+    opacity: 0.3; }
+  main .divPrincipal .divContenedores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 6rem;
+    grid-row-gap: 1rem; }
+    main .divPrincipal .divContenedores div {
+      display: grid;
+      justify-items: center; }
+      main .divPrincipal .divContenedores div img {
+        width: 115px; }
+
+main .button {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 3rem 0; }
+  main .button button {
+    font-size: 1.5rem;
+    padding: 1rem; }
+
+footer {
+  display: flex;
+  justify-content: center; }
+  footer p {
+    font-family: "Quicksand";
+    font-size: 0.8rem;
+    margin: 0; }
+  footer i {
+    color: #222325;
+    padding-left: 0.5rem; }
+
+@media screen and (min-width: 1025px) and (max-width: 1328px) {
+  main > .divPrincipal .divResiduos {
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem; }
+    main > .divPrincipal .divResiduos img {
+      width: 90px; }
+  main > .divPrincipal .divContenedores {
+    grid-column-gap: 2rem; } }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  main > .divPrincipal {
+    grid-template-columns: 1fr;
+    justify-content: center; }
+    main > .divPrincipal p {
+      font-size: 0.8rem;
+      margin: 0; }
+    main > .divPrincipal .divResiduos {
+      grid-row-gap: 0.5rem;
+      grid-column-gap: 1rem; }
+      main > .divPrincipal .divResiduos img {
+        width: 60px; }
+    main > .divPrincipal .divContenedores {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 1rem;
+      padding-top: 2rem; }
+      main > .divPrincipal .divContenedores div > img {
+        width: 70px; } }
